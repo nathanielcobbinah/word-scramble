@@ -1,0 +1,36 @@
+Time Limit:
+
+Add a timer to each word, and the player must guess the word within a certain time limit.
+Levels:
+
+Implement different levels with increasing difficulty. For each level, you can increase the time limit, use longer words, or add more complex hints.
+Shuffle Button:
+
+Allow the player to shuffle the scrambled letters again if they are having difficulty with a word.
+Hint System:
+
+Create a hint system that provides additional hints for a cost. The player can choose to use a hint in exchange for some points.
+High Score Board:
+
+Keep track of the player's highest score and display it on a high score board.
+Sound Effects:
+
+Add sound effects for correct and incorrect guesses, as well as for other events like leveling up or achieving a high score.
+Responsive Design:
+
+Ensure that your game is responsive and works well on different screen sizes.
+Random Words:
+
+Expand your word list and use an API to fetch random words dynamically.
+Animations:
+
+Add animations for transitioning between words or when the user scores points.
+Lives System:
+
+Implement a lives system where the player loses a life for each incorrect guess. The game ends when the player runs out of lives.
+Multiplayer Mode:
+
+Allow multiple players to compete against each other in real-time or take turns.
+Custom Themes:
+
+Allow users to choose different themes or styles for the game.

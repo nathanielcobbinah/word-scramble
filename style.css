@@ -9,26 +9,33 @@ body {
     background: linear-gradient(black, rgb(20, 20, 160), black);
     color: gainsboro;
 }
+h1 {
+    font-size: 50px;
+}
 #game-container {
     text-align: center;
 }
 #word-container {
     font-size: 24px;
     margin: 20px 0;
+    background: linear-gradient(to right, black, blue, black);
+    padding: 10px;
+    width: auto;
 }
 #hint-container {
     font-style: italic;
     margin: 10px 0;
+    color: gray;
 }
 button {
-    padding: 10px;
+    padding: 15px;
     background-color: orangered;
     color: white;
     font-weight: bold;
     border: none;
 }
 input {
-    padding: 8px;
+    padding: 12px;
     outline: none;
 }
 
@@ -37,11 +44,11 @@ input {
 #popup {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: rgb(8, 8, 163, 0.7);
+    padding: 20px 30px;
+    background-color: rgba(4, 13, 63, 0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
