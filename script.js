@@ -202,10 +202,12 @@ let words = [
 ];
 
 
+
+
 let shuffledWords = shuffleArray([...words]); // Randomly shuffle the words array
 let currentWordIndex = 0;
 let score = 0;
-let timer;
+let timer;  
 
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -215,40 +217,72 @@ function scrambleWord(word) {
     return word.split('').sort(() => Math.random() - 0.5).join('');
 }
 
+
+const startBtn = document.getElementById('start-btn');
+startBtn.addEventListener('click', startGame);
+
+function startGame() {
+    // Disable the start button to prevent multiple game sessions
+    startBtn.disabled = true;
+    
+    // Start the game by displaying the first word
+    displayWord();
+}
+
+
+
 function displayWord() {
     const wordContainer = document.getElementById('word-container');
     const hintContainer = document.getElementById('hint-container');
     const scoreContainer = document.getElementById('score-container');
     const timerContainer = document.getElementById("timer-container");
-    const highestScoreContainer = document.getElementById('highest-score-container'); 
+    const highestScoreContainer = document.getElementById('highest-score-container');
 
-    // Shuffle the array before displaying the word
-    shuffledWords = shuffleArray([...words]);
+    // Shuffle the array only when all words have been shown
+    if (currentWordIndex === 0) {
+        shuffledWords = shuffleArray([...words]);
+    }
 
     const currentWord = shuffledWords[currentWordIndex];
     const scrambledWord = scrambleWord(currentWord.word);
-    scoreContainer.textContent = `Score: ${score}`; 
+    scoreContainer.textContent = `Score: ${score}`;
     wordContainer.textContent = scrambledWord;
     hintContainer.textContent = `Hint: ${currentWord.hint}`;
-    highestScoreContainer.textContent = `Highest Score: ${getHighestScore()}`; 
-    
-    let timeLimit = 20; // in seconds
-    timerContainer.textContent = `Time: ${timeLimit}`;
+    highestScoreContainer.textContent = `Highest Score: ${getHighestScore()}`;
 
-    // Start the timer countdown
-    timer = setInterval(function () {
-        timeLimit--;
+    if (timer === undefined) {
+        let timeLimit = 20; // in seconds
         timerContainer.textContent = `Time: ${timeLimit}`;
-        
-        // Check if time is up
-        if (timeLimit <= 0) {
-            clearInterval(timer);
-            showPopup('Time is up! Try the next word.');
-            score -= 5; // Deduct points for running out of time
-            displayWord(); // Move to the next word
-        }
-    }, 1000);
+
+        // Start the timer countdown
+        timer = setInterval(function () {
+            timeLimit--;
+            timerContainer.textContent = `Time: ${timeLimit}`;
+
+            // Check if time is up
+            if (timeLimit <= 0) {
+                clearInterval(timer);
+                showPopup(`Time is up! The correct word was "${currentWord.word}". Try the next word.`);
+                score -= 5; // Deduct points for running out of time
+                currentWordIndex = (currentWordIndex + 1) % shuffledWords.length;
+                resetTimer(); // Reset the timer and move to the next word
+            }
+        }, 1000);
+    }
+
     wordContainer.classList.add('fadeInOut');
+}
+
+function resetGame() {
+    // Enable the start button for a new game session
+    startBtn.disabled = false;
+    
+    // Reset game variables
+    clearInterval(timer);
+    timer = undefined;
+    currentWordIndex = 0;
+    score = 0;
+    displayWord(); // Display the first word
 }
 
 
@@ -260,10 +294,19 @@ function scramble() {
 
 function resetTimer() {
     clearInterval(timer);
-    displayWord();
+    timer = undefined;
+    if (currentWordIndex < shuffledWords.length) {
+        displayWord(); // Display the next word
+    } else {
+        // End of the game, show a congratulatory message or perform other end-of-game actions
+        showPopup(`Congratulations! You completed the game with a score of ${score}.`);
+        resetGame(); // Reset the game for a new session
+    }
 }
 
 displayWord();
+
+
 
 function getHighestScore() {
     return localStorage.getItem('highestScore') || 0;
@@ -273,9 +316,6 @@ function getHighestScore() {
 function setHighestScore(newScore) {
     localStorage.setItem('highestScore', newScore);
 }
-
-
-// ... (your existing code)
 
 function showPopup(message) {
     const popup = document.getElementById('popup');
@@ -288,21 +328,10 @@ function showPopup(message) {
     closeBtn.onclick = function() {
         popup.style.display = 'none';
         guessInput.value = '';
-
-        if (message.includes('Correct')) {
-            scoreContainer.textContent = `Score: ${score} | Last Correct Word: ${shuffledWords[currentWordIndex].word}`;
-            scramble(); // Move to the next word
-        } else {
-            resetTimer(); // Reset the timer when the popup is closed for incorrect guess
-        }
+        resetTimer();
     };
-
     popup.classList.add('fadeInOut');
 }
-
-// ... (your existing code)
-
-
 
 function checkGuess() {
     const guessInput = document.getElementById('guessInput');
@@ -310,7 +339,7 @@ function checkGuess() {
     const currentWord = shuffledWords[currentWordIndex].word;
 
     if (userGuess === currentWord) {
-        clearInterval(timer); // Clear the timer for the correct guess
+        clearInterval(timer);
         showPopup('Correct! Well done.');
         score += 10;
 
@@ -323,5 +352,5 @@ function checkGuess() {
         score -= 5;
     }
 
-    displayWord(); // Display the next word after checking the guess
+    displayWord(); 
 }
