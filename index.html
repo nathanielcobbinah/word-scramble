@@ -12,20 +12,20 @@
 
     <div id="game-container">
         <h1>Word Scramble</h1>
-        <button id="start-btn">Start</button>
+        <button id="start-btn">Reset Game</button>
         <div id="score-container"></div>
         <div id="timer-container"></div>
         <div id="highest-score-container"></div>
         <div id="word-container"></div>
         <div id="hint-container"></div>
-        <button onclick="scramble()">Scramble</button>
+        <button onclick="scramble()" id="scramble">Scramble</button>
         <input type="text" id="guessInput" placeholder="Your Guess">
-        <button onclick="checkGuess()">Check Guess</button>
+        <button onclick="checkGuess()" id="check-guess">Check Guess</button>
     </div>
 
     <div id="popup">
-        <div id="popup-content"></div>
-        <button id="close-btn">Close</button>
+        <em id="popup-content"></em>
+        <button id="close-btn">x</button>
     </div>
 
 

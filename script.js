@@ -209,13 +209,13 @@ let currentWordIndex = 0;
 let score = 0;
 let timer;  
 
-function shuffleArray(array) {
-    return array.sort(() => Math.random() - 0.5);
+function shuffleArray(words) {
+    return words.sort(() => Math.random() - 0.5);
 }
 
 function scrambleWord(word) {
     return word.split('').sort(() => Math.random() - 0.5).join('');
-}
+}   
 
 
 const startBtn = document.getElementById('start-btn');
@@ -224,9 +224,8 @@ startBtn.addEventListener('click', startGame);
 function startGame() {
     // Disable the start button to prevent multiple game sessions
     startBtn.disabled = true;
-    
-    // Start the game by displaying the first word
-    displayWord();
+    // Reset the game by displaying the first word
+    resetGame();
 }
 
 
@@ -264,7 +263,7 @@ function displayWord() {
                 clearInterval(timer);
                 showPopup(`Time is up! The correct word was "${currentWord.word}". Try the next word.`);
                 score -= 5; // Deduct points for running out of time
-                currentWordIndex = (currentWordIndex + 1) % shuffledWords.length;
+                // currentWordIndex = (currentWordIndex + 1) % shuffledWords.length;
                 resetTimer(); // Reset the timer and move to the next word
             }
         }, 1000);
@@ -275,7 +274,7 @@ function displayWord() {
 
 function resetGame() {
     // Enable the start button for a new game session
-    startBtn.disabled = false;
+    // startBtn.disabled = false;
     
     // Reset game variables
     clearInterval(timer);
@@ -337,7 +336,9 @@ function checkGuess() {
     const guessInput = document.getElementById('guessInput');
     const userGuess = guessInput.value.toLowerCase();
     const currentWord = shuffledWords[currentWordIndex].word;
+    
 
+    
     if (userGuess === currentWord) {
         clearInterval(timer);
         showPopup('Correct! Well done.');
@@ -345,12 +346,13 @@ function checkGuess() {
 
         if (score > getHighestScore()) {
             setHighestScore(score);
-        }
-        
+        } 
+    } else if (userGuess == '') {
+        showPopup('Please input a word');
     } else {
         showPopup('Incorrect. Try again!');
         score -= 5;
     }
 
-    displayWord(); 
+    // displayWord(); 
 }
