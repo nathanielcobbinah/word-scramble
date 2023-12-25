@@ -198,6 +198,226 @@ let words = [
     {
         word: "birthday",
         hint: "The anniversary of the day on which a person was born"
+    },
+    {
+        word: "mountain",
+        hint: "A large landform that rises prominently above its surroundings, typically having a peak or summit"
+    },
+    {
+        word: "ocean",
+        hint: "A vast and continuous expanse of seawater, constituting a principal part of the hydrosphere"
+    },
+    {
+        word: "technology",
+        hint: "The application of scientific knowledge for practical purposes, especially in industry and commerce"
+    },
+    {
+        word: "friendship",
+        hint: "The emotions or conduct of friends; the state of being friends"
+    },
+    {
+        word: "adventure",
+        hint: "An exciting or unusual experience; a bold, usually risky undertaking"
+    },
+    {
+        word: "challenge",
+        hint: "A call or summons to engage in any contest, as of skill, strength, etc."
+    },
+    {
+        word: "celebration",
+        hint: "The act of observing a day or an event with ceremonies or festivities"
+    },
+    {
+        word: "nature",
+        hint: "The phenomena of the physical world collectively, including plants, animals, the landscape, and other features"
+    },
+    {
+        word: "exploration",
+        hint: "The action of traveling in or through an unfamiliar area in order to learn about it"
+    },
+    {
+        word: "inspiration",
+        hint: "The process of being mentally stimulated to do or feel something, especially to do something creative"
+    },
+    {
+        word: "creativity",
+        hint: "The use of the imagination or original ideas, especially in the production of artistic work"
+    },
+    {
+        word: "courage",
+        hint: "The ability to confront fear, pain, danger, uncertainty, or other forms of adversity"
+    },
+    {
+        word: "freedom",
+        hint: "The power or right to act, speak, or think as one wants without hindrance or restraint"
+    },
+    {
+        word: "wisdom",
+        hint: "The quality of having experience, knowledge, and good judgment; the quality of being wise"
+    },
+    {
+        word: "victory",
+        hint: "An act of defeating an enemy or opponent in a battle, game, or other competition"
+    },
+    {
+        word: "imagination",
+        hint: "The faculty or action of forming new ideas, images, or concepts not present to the senses"
+    },
+    {
+        word: "peace",
+        hint: "Freedom from disturbance; tranquility; a state or period in which there is no war"
+    },
+    {
+        word: "purpose",
+        hint: "The reason for which something is done or created or for which something exists"
+    },
+    {
+        word: "knowledge",
+        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
+    },
+    {
+        word: "achievement",
+        hint: "A thing done successfully with effort, skill, or courage; the process or fact of achieving something"
+    },
+    {
+        word: "communication",
+        hint: "The imparting or exchanging of information or news"
+    },
+    {
+        word: "happiness",
+        hint: "The state of being happy, characterized by contentment, joy, satisfaction, or pleasure"
+    },
+    {
+        word: "beauty",
+        hint: "A combination of qualities, such as shape, color, or form, that pleases the aesthetic senses"
+    },
+    {
+        word: "kindness",
+        hint: "The quality of being friendly, generous, and considerate"
+    },
+    {
+        word: "knowledge",
+        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
+    },
+    {
+        word: "journey",
+        hint: "An act of traveling from one place to another, especially when involving a considerable distance"
+    },
+    {
+        word: "laughter",
+        hint: "The action or sound of laughing"
+    },
+    {
+        word: "curiosity",
+        hint: "A strong desire to know or learn something"
+    },
+    {
+        word: "innovation",
+        hint: "The introduction of new things or methods; the act of innovating"
+    },
+    {
+        word: "friendship",
+        hint: "The emotions or conduct of friends; the state of being friends"
+    },
+    {
+        word: "adventure",
+        hint: "An exciting or unusual experience; a bold, usually risky undertaking"
+    },
+    {
+        word: "challenge",
+        hint: "A call or summons to engage in any contest, as of skill, strength, etc."
+    },
+    {
+        word: "celebration",
+        hint: "The act of observing a day or an event with ceremonies or festivities"
+    },
+    {
+        word: "nature",
+        hint: "The phenomena of the physical world collectively, including plants, animals, the landscape, and other features"
+    },
+    {
+        word: "exploration",
+        hint: "The action of traveling in or through an unfamiliar area in order to learn about it"
+    },
+    {
+        word: "inspiration",
+        hint: "The process of being mentally stimulated to do or feel something, especially to do something creative"
+    },
+    {
+        word: "creativity",
+        hint: "The use of the imagination or original ideas, especially in the production of artistic work"
+    },
+    {
+        word: "courage",
+        hint: "The ability to confront fear, pain, danger, uncertainty, or other forms of adversity"
+    },
+    {
+        word: "freedom",
+        hint: "The power or right to act, speak, or think as one wants without hindrance or restraint"
+    },
+    {
+        word: "wisdom",
+        hint: "The quality of having experience, knowledge, and good judgment; the quality of being wise"
+    },
+    {
+        word: "victory",
+        hint: "An act of defeating an enemy or opponent in a battle, game, or other competition"
+    },
+    {
+        word: "imagination",
+        hint: "The faculty or action of forming new ideas, images, or concepts not present to the senses"
+    },
+    {
+        word: "peace",
+        hint: "Freedom from disturbance; tranquility; a state or period in which there is no war"
+    },
+    {
+        word: "purpose",
+        hint: "The reason for which something is done or created or for which something exists"
+    },
+    {
+        word: "knowledge",
+        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
+    },
+    {
+        word: "achievement",
+        hint: "A thing done successfully with effort, skill, or courage; the process or fact of achieving something"
+    },
+    {
+        word: "communication",
+        hint: "The imparting or exchanging of information or news"
+    },
+    {
+        word: "happiness",
+        hint: "The state of being happy, characterized by contentment, joy, satisfaction, or pleasure"
+    },
+    {
+        word: "beauty",
+        hint: "A combination of qualities, such as shape, color, or form, that pleases the aesthetic senses"
+    },
+    {
+        word: "kindness",
+        hint: "The quality of being friendly, generous, and considerate"
+    },
+    {
+        word: "knowledge",
+        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
+    },
+    {
+        word: "journey",
+        hint: "An act of traveling from one place to another, especially when involving a considerable distance"
+    },
+    {
+        word: "laughter",
+        hint: "The action or sound of laughing"
+    },
+    {
+        word: "curiosity",
+        hint: "A strong desire to know or learn something"
+    },
+    {
+        word: "innovation",
+        hint: "The introduction of new things or methods; the act of innovating"
     }
 ];
 

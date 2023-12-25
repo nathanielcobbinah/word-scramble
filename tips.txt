@@ -19,7 +19,7 @@ Add sound effects for correct and incorrect guesses, as well as for other events
 Responsive Design:
 
 Ensure that your game is responsive and works well on different screen sizes.
-Random Words:
+Random Words:   
 
 Expand your word list and use an API to fetch random words dynamically.
 Animations:
