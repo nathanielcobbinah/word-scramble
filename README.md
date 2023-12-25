@@ -25,7 +25,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/nathanielcobbinah/word-scramble-game.git
+git clone https://github.com/nathanielcobbinah/wordscramble.git
 Open the index.html file in your web browser.
 How to Play
 Click on the "Start Game" button to begin.
