@@ -443,6 +443,9 @@ startBtn.addEventListener('click', startGame);
 
 function startGame() {
     // Disable the start button to prevent multiple game sessions
+    // document.body.className = 'light-theme';
+    setTheme('default-theme');
+
     startBtn.disabled = true;
     // Reset the game by displaying the first word
     resetGame();
@@ -494,7 +497,12 @@ function displayWord() {
 
 function resetGame() {
     // Enable the start button for a new game session
-    // startBtn.disabled = false;
+    startBtn.disabled = false;
+
+    // document.body.className = 'light-theme';
+    setTheme('default-theme');
+
+
     
     // Reset game variables
     clearInterval(timer);
@@ -575,4 +583,35 @@ function checkGuess() {
     }
 
     // displayWord(); 
+}
+
+
+
+
+
+// Add the event listener for the "Check Word" button
+    const checkWordBtn = document.getElementById('check-word');
+    checkWordBtn.addEventListener('click', checkWord);
+
+    // New function to check the current word
+    function checkWord() {
+        const currentWord = shuffledWords[currentWordIndex].word;
+        showPopup(`The correct word is "${currentWord}".`);
+    }
+
+
+
+
+
+
+// Add this function to toggle between themes
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('light-theme');
+    body.classList.toggle('dark-theme');
+}
+
+
+function setTheme(theme) {
+    document.body.className = theme;
 }

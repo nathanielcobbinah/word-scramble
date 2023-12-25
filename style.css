@@ -1,184 +1,184 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 5px 10px;
-    background: linear-gradient(black, rgb(20, 20, 160), black);
-    color: gainsboro;
-}
-
-h1 {
-    font-size: 40px;
-    margin-top: 30px;
-}
-
-#game-container {
-    text-align: center;
-}
-
-#word-container {
-    font-size: 24px;
-    margin: 20px 0;
-    background: linear-gradient(to right, rgb(3, 10, 73), blue, black);
-    /* background-color: rgb(255, 0, 85, 0.7); */
-    color: white;
-    padding: 10px 0;
-    width: auto;
-    animation: fadeInOut 1s ease-out;
-}
-
-
-#hint-container {
-    font-style: italic;
-    margin: 10px 0;
-    color: gray;
-}
-
-button {
-    padding: 15px;
-    background-color: orangered;
-    color: white;
-    font-weight: bold;
-    border: none;
-}
-
-input {
-    padding: 12px;
-    outline: none;
-}
-
-/* Add this style at the end of your existing CSS */
-
-#popup {
-    display: none;
-    position: fixed;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    padding: 10px 30px;
-    background-color: rgba(4, 13, 63, 0.5);
-    color: gray;
-    box-shadow: 0 0 10px rgba(76, 0, 255, 0.5);
-    z-index: 1000;
-    animation: fadeInOut 1s ease-out;
-}
-
-#popup button {
-    margin-top: 10px;
-}
-
-@keyframes fadeInOut {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-#score-container, #timer-container, #highest-score-container {
-    padding: 5px 0;
-}
-
-#close-btn {
-    background-color: red;
-    padding: 5px 10px;
-}
-#start-btn {
-    background-color: green;
-}
-#scramble {
-    background-color: blue;
-}
-#check-guess {
-    background-color: red;
-}
-
-@media all and (max-width: 480px) {
-    .operation {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 5px 10px;
+        background: linear-gradient(black, rgb(20, 20, 160), black);
+        color: gainsboro;
     }
-    button {
-        padding: 5px;
+
+    h1 {
+        font-size: 40px;
+        margin-top: 30px;
     }
-    input{
-        width: 40%;
+
+    #game-container {
+        text-align: center;
     }
+
     #word-container {
-        font-size: 16px;
+        font-size: 24px;
+        margin: 20px 0;
+        background: linear-gradient(to right, rgb(3, 10, 73), blue, black);
+        /* background-color: rgb(255, 0, 85, 0.7); */
+        color: white;
+        padding: 10px 0;
+        width: auto;
+        animation: fadeInOut 1s ease-out;
     }
-}
+
+
+    #hint-container {
+        font-style: italic;
+        margin: 10px 0;
+        color: gray;
+    }
+
+    button {
+        padding: 15px;
+        background-color: orangered;
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+
+    input {
+        padding: 12px;
+        outline: none;
+    }
+
+    /* Add this style at the end of your existing CSS */
+
+    #popup {
+        display: none;
+        position: fixed;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        padding: 10px 30px;
+        background-color: rgba(4, 13, 63, 0.5);
+        color: gray;
+        box-shadow: 0 0 10px rgba(76, 0, 255, 0.5);
+        z-index: 1000;
+        animation: fadeInOut 1s ease-out;
+    }
+
+    #popup button {
+        margin-top: 10px;
+    }
+
+    @keyframes fadeInOut {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    #score-container, #timer-container, #highest-score-container {
+        padding: 5px 0;
+    }
+
+    #close-btn {
+        background-color: red;
+        padding: 5px 10px;
+    }
+    #start-btn {
+        background-color: green;
+    }
+    #scramble {
+        background-color: blue;
+    }
+    #check-guess {
+        background-color: red;
+    }
+
+    @media all and (max-width: 480px) {
+        .operation {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        button {
+            padding: 5px;
+        }
+        input{
+            width: 40%;
+        }
+        #word-container {
+            font-size: 16px;
+        }
+    }
 
 
 
 
-/* Light theme */
-.light-theme {
-    background: linear-gradient(white, gainsboro);
-    color: black;
-}
+    /* Light theme */
+    .light-theme {
+        background: linear-gradient(white, gainsboro);
+        color: black;
+    }
 
-.light-theme #word-container {
-    background: linear-gradient(to right, lightcyan, lightblue, white);
-    color: black;
-    padding: 10px 0;
-}
+    .light-theme #word-container {
+        background: linear-gradient(to right, lightcyan, lightblue, white);
+        color: black;
+        padding: 10px 0;
+    }
 
-/* Dark theme */
-.dark-theme {
-    background: linear-gradient(black, darkslategrey, black);
-    color: white;
-}
+    /* Dark theme */
+    .dark-theme {
+        background: linear-gradient(black, darkslategrey, black);
+        color: white;
+    }
 
-.dark-theme #word-container {
-    background: linear-gradient(to right, darkblue, midnightblue, black);
-    color: white;
-    padding: 10px 0;
-}
+    .dark-theme #word-container {
+        background: linear-gradient(to right, darkblue, midnightblue, black);
+        color: white;
+        padding: 10px 0;
+    }
 
-/* Ocean theme */
-.ocean-theme {
-    background: linear-gradient(rgb(0, 102, 204), rgb(102, 178, 255));
-    color: white;
-}
+    /* Ocean theme */
+    .ocean-theme {
+        background: linear-gradient(rgb(0, 102, 204), rgb(102, 178, 255));
+        color: white;
+    }
 
-.ocean-theme #word-container {
-    background: linear-gradient(to right, rgb(0, 51, 102), rgb(0, 102, 204), white);
-    color: white;
-    padding: 10px 0;
-}
+    .ocean-theme #word-container {
+        background: linear-gradient(to right, rgb(0, 51, 102), rgb(0, 102, 204), white);
+        color: white;
+        padding: 10px 0;
+    }
 
-/* Forest theme */
-.forest-theme {
-    background: linear-gradient(darkgreen, forestgreen, darkgreen);
-    color: white;
-}
+    /* Forest theme */
+    .forest-theme {
+        background: linear-gradient(darkgreen, forestgreen, darkgreen);
+        color: white;
+    }
 
-.forest-theme #word-container {
-    background: linear-gradient(to right, green, forestgreen, white);
-    color: white;
-    padding: 10px 0;
-}
+    .forest-theme #word-container {
+        background: linear-gradient(to right, green, forestgreen, white);
+        color: white;
+        padding: 10px 0;
+    }
 
-/* Modify the existing styles for Default theme */
-#game-container {
-    text-align: center;
-    background: linear-gradient(black, rgb(20, 20, 160), black);
-    color: gainsboro;
-}
+    /* Modify the existing styles for Default theme */
+    #game-container {
+        text-align: center;
+        background: linear-gradient(black, rgb(20, 20, 160), black);
+        color: gainsboro;
+    }
 
-#word-container {
-    font-size: 24px;
-    margin: 20px 0;
-    background: linear-gradient(to right, rgb(3, 10, 73), blue, black);
-    color: white;
-    padding: 10px 0;
-    width: auto;
-    animation: fadeInOut 1s ease-out;
-}
+    #word-container {
+        font-size: 24px;
+        margin: 20px 0;
+        background: linear-gradient(to right, rgb(3, 10, 73), blue, black);
+        color: white;
+        padding: 10px 0;
+        width: auto;
+        animation: fadeInOut 1s ease-out;
+    }

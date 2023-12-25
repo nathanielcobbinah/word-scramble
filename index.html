@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
     <title>Word Scramble Game</title>
 </head>
 
 <body>
 
+
+
+<header>
+    <button onclick="setTheme('light-theme')">Light Theme</button>
+    <button onclick="setTheme('dark-theme')">Dark Theme</button>
+    <button onclick="setTheme('ocean-theme')">Ocean Theme</button>
+    <button onclick="setTheme('forest-theme')">Forest Theme</button>
+</header>
+
+    
+
     <div id="game-container">
         <h1>Word Scramble</h1>
         <button id="start-btn">Reset Game</button>
+        <button onclick="checkWord()" id="check-word">Check Word</button>
         <div id="score-container"></div>
         <div id="timer-container"></div>
         <div id="highest-score-container"></div>
         <div id="word-container"></div>
         <div id="hint-container"></div>
-        <button onclick="scramble()" id="scramble">Scramble</button>
-        <input type="text" id="guessInput" placeholder="Your Guess">
-        <button onclick="checkGuess()" id="check-guess">Check Guess</button>
+        <!-- Add the new "Check Word" button -->
+<div class="operation">
+    <button onclick="scramble()" id="scramble">Scramble</button>
+    <input type="text" id="guessInput" placeholder="Your Guess">
+    <button onclick="checkGuess()" id="check-guess">Check Guess</button>
+</div>
+
     </div>
 
     <div id="popup">
@@ -30,6 +64,10 @@
 
 
     <script src="script.js"></script>
+    
+    
+    
+    
 </body>
 
 </html>
