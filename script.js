@@ -1,425 +1,119 @@
 let words = [
-    {
-        word: "coffee",
-        hint: "A popular beverage made from roasted coffee beans"
-    },
-    {
-        word: "book",
-        hint: "A set of written or printed pages, usually bound with a protective cover"
-    },
-    {
-        word: "phone",
-        hint: "An electronic device used for making calls, sending messages, and more"
-    },
-    {
-        word: "music",
-        hint: "Art form and cultural activity whose medium is sound"
-    },
-    {
-        word: "friend",
-        hint: "A person whom one knows and with whom one has a bond of mutual affection"
-    },
-    {
-        word: "work",
-        hint: "Activity involving mental or physical effort done to achieve a purpose"
-    },
-    {
-        word: "home",
-        hint: "A place where one lives, especially as a member of a family or household"
-    },
-    {
-        word: "food",
-        hint: "Any nutritious substance that people or animals eat or drink to maintain life and growth"
-    },
-    {
-        word: "travel",
-        hint: "To go on a trip or journey, typically for leisure or vacation"
-    },
-    {
-        word: "sun",
-        hint: "The star around which Earth and other planets orbit, providing light and heat"
-    },
-    {
-        word: "love",
-        hint: "An intense feeling of deep affection or a great interest and pleasure in something"
-    },
-    {
-        word: "smile",
-        hint: "A pleased, kind, or amused facial expression, typically with the corners of the mouth turned up"
-    },
-    {
-        word: "park",
-        hint: "A large public green area in a town, used for recreation"
-    },
-    {
-        word: "family",
-        hint: "A group consisting of parents and children living together in a household"
-    },
-    {
-        word: "game",
-        hint: "An activity that one engages in for amusement or fun"
-    },
-    {
-        word: "weather",
-        hint: "The state of the atmosphere at a place and time as regards heat, dryness, sunshine, wind, rain, etc."
-    },
-    {
-        word: "dance",
-        hint: "To move rhythmically to music, typically following a set sequence of steps"
-    },
-    {
-        word: "holiday",
-        hint: "A day of festivity or recreation when no work is done"
-    },
-    {
-        word: "movie",
-        hint: "A story or event recorded by a camera as a set of moving images and shown in a theater or on television"
-    },
-    {
-        word: "health",
-        hint: "The state of being free from illness or injury"
-    },
-    {
-        word: "coffee",
-        hint: "A popular beverage made from roasted coffee beans"
-    },
-    {
-        word: "book",
-        hint: "A set of written or printed pages, usually bound with a protective cover"
-    },
-    {
-        word: "phone",
-        hint: "An electronic device used for making calls, sending messages, and more"
-    },
-    {
-        word: "music",
-        hint: "Art form and cultural activity whose medium is sound"
-    },
-    {
-        word: "friend",
-        hint: "A person whom one knows and with whom one has a bond of mutual affection"
-    },
-    {
-        word: "work",
-        hint: "Activity involving mental or physical effort done to achieve a purpose"
-    },
-    {
-        word: "home",
-        hint: "A place where one lives, especially as a member of a family or household"
-    },
-    {
-        word: "food",
-        hint: "Any nutritious substance that people or animals eat or drink to maintain life and growth"
-    },
-    {
-        word: "travel",
-        hint: "To go on a trip or journey, typically for leisure or vacation"
-    },
-    {
-        word: "sun",
-        hint: "The star around which Earth and other planets orbit, providing light and heat"
-    },
-    {
-        word: "love",
-        hint: "An intense feeling of deep affection or a great interest and pleasure in something"
-    },
-    {
-        word: "smile",
-        hint: "A pleased, kind, or amused facial expression, typically with the corners of the mouth turned up"
-    },
-    {
-        word: "park",
-        hint: "A large public green area in a town, used for recreation"
-    },
-    {
-        word: "family",
-        hint: "A group consisting of parents and children living together in a household"
-    },
-    {
-        word: "game",
-        hint: "An activity that one engages in for amusement or fun"
-    },
-    {
-        word: "weather",
-        hint: "The state of the atmosphere at a place and time as regards heat, dryness, sunshine, wind, rain, etc."
-    },
-    {
-        word: "dance",
-        hint: "To move rhythmically to music, typically following a set sequence of steps"
-    },
-    {
-        word: "holiday",
-        hint: "A day of festivity or recreation when no work is done"
-    },
-    {
-        word: "movie",
-        hint: "A story or event recorded by a camera as a set of moving images and shown in a theater or on television"
-    },
-    {
-        word: "health",
-        hint: "The state of being free from illness or injury"
-    },
-    {
-        word: "car",
-        hint: "A road vehicle, typically with four wheels, powered by an internal combustion engine and able to carry a small number of people"
-    },
-    {
-        word: "water",
-        hint: "A transparent, tasteless, odorless, and nearly colorless chemical substance that is essential for all known forms of life"
-    },
-    {
-        word: "computer",
-        hint: "An electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program"
-    },
-    {
-        word: "watch",
-        hint: "A small timepiece worn typically on a strap on one's wrist"
-    },
-    {
-        word: "school",
-        hint: "An institution for educating children"
-    },
-    {
-        word: "money",
-        hint: "A current medium of exchange in the form of coins and banknotes; coins and banknotes collectively"
-    },
-    {
-        word: "garden",
-        hint: "A piece of ground, often near a house, used for growing flowers, fruit, or vegetables"
-    },
-    {
-        word: "sleep",
-        hint: "A condition of body and mind that typically recurs for several hours every night, in which the nervous system is inactive, the eyes closed, the postural muscles relaxed, and consciousness practically suspended"
-    },
-    {
-        word: "bag",
-        hint: "A flexible container with an opening at the top, used for carrying things"
-    },
-    {
-        word: "birthday",
-        hint: "The anniversary of the day on which a person was born"
-    },
-    {
-        word: "mountain",
-        hint: "A large landform that rises prominently above its surroundings, typically having a peak or summit"
-    },
-    {
-        word: "ocean",
-        hint: "A vast and continuous expanse of seawater, constituting a principal part of the hydrosphere"
-    },
-    {
-        word: "technology",
-        hint: "The application of scientific knowledge for practical purposes, especially in industry and commerce"
-    },
-    {
-        word: "friendship",
-        hint: "The emotions or conduct of friends; the state of being friends"
-    },
-    {
-        word: "adventure",
-        hint: "An exciting or unusual experience; a bold, usually risky undertaking"
-    },
-    {
-        word: "challenge",
-        hint: "A call or summons to engage in any contest, as of skill, strength, etc."
-    },
-    {
-        word: "celebration",
-        hint: "The act of observing a day or an event with ceremonies or festivities"
-    },
-    {
-        word: "nature",
-        hint: "The phenomena of the physical world collectively, including plants, animals, the landscape, and other features"
-    },
-    {
-        word: "exploration",
-        hint: "The action of traveling in or through an unfamiliar area in order to learn about it"
-    },
-    {
-        word: "inspiration",
-        hint: "The process of being mentally stimulated to do or feel something, especially to do something creative"
-    },
-    {
-        word: "creativity",
-        hint: "The use of the imagination or original ideas, especially in the production of artistic work"
-    },
-    {
-        word: "courage",
-        hint: "The ability to confront fear, pain, danger, uncertainty, or other forms of adversity"
-    },
-    {
-        word: "freedom",
-        hint: "The power or right to act, speak, or think as one wants without hindrance or restraint"
-    },
-    {
-        word: "wisdom",
-        hint: "The quality of having experience, knowledge, and good judgment; the quality of being wise"
-    },
-    {
-        word: "victory",
-        hint: "An act of defeating an enemy or opponent in a battle, game, or other competition"
-    },
-    {
-        word: "imagination",
-        hint: "The faculty or action of forming new ideas, images, or concepts not present to the senses"
-    },
-    {
-        word: "peace",
-        hint: "Freedom from disturbance; tranquility; a state or period in which there is no war"
-    },
-    {
-        word: "purpose",
-        hint: "The reason for which something is done or created or for which something exists"
-    },
-    {
-        word: "knowledge",
-        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
-    },
-    {
-        word: "achievement",
-        hint: "A thing done successfully with effort, skill, or courage; the process or fact of achieving something"
-    },
-    {
-        word: "communication",
-        hint: "The imparting or exchanging of information or news"
-    },
-    {
-        word: "happiness",
-        hint: "The state of being happy, characterized by contentment, joy, satisfaction, or pleasure"
-    },
-    {
-        word: "beauty",
-        hint: "A combination of qualities, such as shape, color, or form, that pleases the aesthetic senses"
-    },
-    {
-        word: "kindness",
-        hint: "The quality of being friendly, generous, and considerate"
-    },
-    {
-        word: "knowledge",
-        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
-    },
-    {
-        word: "journey",
-        hint: "An act of traveling from one place to another, especially when involving a considerable distance"
-    },
-    {
-        word: "laughter",
-        hint: "The action or sound of laughing"
-    },
-    {
-        word: "curiosity",
-        hint: "A strong desire to know or learn something"
-    },
-    {
-        word: "innovation",
-        hint: "The introduction of new things or methods; the act of innovating"
-    },
-    {
-        word: "friendship",
-        hint: "The emotions or conduct of friends; the state of being friends"
-    },
-    {
-        word: "adventure",
-        hint: "An exciting or unusual experience; a bold, usually risky undertaking"
-    },
-    {
-        word: "challenge",
-        hint: "A call or summons to engage in any contest, as of skill, strength, etc."
-    },
-    {
-        word: "celebration",
-        hint: "The act of observing a day or an event with ceremonies or festivities"
-    },
-    {
-        word: "nature",
-        hint: "The phenomena of the physical world collectively, including plants, animals, the landscape, and other features"
-    },
-    {
-        word: "exploration",
-        hint: "The action of traveling in or through an unfamiliar area in order to learn about it"
-    },
-    {
-        word: "inspiration",
-        hint: "The process of being mentally stimulated to do or feel something, especially to do something creative"
-    },
-    {
-        word: "creativity",
-        hint: "The use of the imagination or original ideas, especially in the production of artistic work"
-    },
-    {
-        word: "courage",
-        hint: "The ability to confront fear, pain, danger, uncertainty, or other forms of adversity"
-    },
-    {
-        word: "freedom",
-        hint: "The power or right to act, speak, or think as one wants without hindrance or restraint"
-    },
-    {
-        word: "wisdom",
-        hint: "The quality of having experience, knowledge, and good judgment; the quality of being wise"
-    },
-    {
-        word: "victory",
-        hint: "An act of defeating an enemy or opponent in a battle, game, or other competition"
-    },
-    {
-        word: "imagination",
-        hint: "The faculty or action of forming new ideas, images, or concepts not present to the senses"
-    },
-    {
-        word: "peace",
-        hint: "Freedom from disturbance; tranquility; a state or period in which there is no war"
-    },
-    {
-        word: "purpose",
-        hint: "The reason for which something is done or created or for which something exists"
-    },
-    {
-        word: "knowledge",
-        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
-    },
-    {
-        word: "achievement",
-        hint: "A thing done successfully with effort, skill, or courage; the process or fact of achieving something"
-    },
-    {
-        word: "communication",
-        hint: "The imparting or exchanging of information or news"
-    },
-    {
-        word: "happiness",
-        hint: "The state of being happy, characterized by contentment, joy, satisfaction, or pleasure"
-    },
-    {
-        word: "beauty",
-        hint: "A combination of qualities, such as shape, color, or form, that pleases the aesthetic senses"
-    },
-    {
-        word: "kindness",
-        hint: "The quality of being friendly, generous, and considerate"
-    },
-    {
-        word: "knowledge",
-        hint: "Facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject"
-    },
-    {
-        word: "journey",
-        hint: "An act of traveling from one place to another, especially when involving a considerable distance"
-    },
-    {
-        word: "laughter",
-        hint: "The action or sound of laughing"
-    },
-    {
-        word: "curiosity",
-        hint: "A strong desire to know or learn something"
-    },
-    {
-        word: "innovation",
-        hint: "The introduction of new things or methods; the act of innovating"
-    }
-];
+    { word: "elephant", hint: "Large mammal with a trunk" },
+    { word: "sunflower", hint: "Yellow flower that faces the sun" },
+    { word: "keyboard", hint: "Input device for computers" },
+    { word: "guitar", hint: "Musical instrument with strings" },
+    { word: "mountain", hint: "Tall landform with peaks" },
+    { word: "butterfly", hint: "Insect with colorful wings" },
+    { word: "telephone", hint: "Device used for communication" },
+    { word: "umbrella", hint: "Protects from rain or sun" },
+    { word: "camera", hint: "Device used to capture images" },
+    { word: "piano", hint: "Musical instrument with black and white keys" },
+    { word: "cupcake", hint: "Small cake often topped with icing" },
+    { word: "tiger", hint: "Striped feline predator" },
+    { word: "ocean", hint: "Vast body of saltwater" },
+    { word: "bicycle", hint: "Two-wheeled vehicle" },
+    { word: "fireworks", hint: "Colorful explosions in the sky" },
+    { word: "pizza", hint: "Italian dish with cheese and toppings" },
+    { word: "ballet", hint: "Form of dance characterized by grace and precision" },
+    { word: "volcano", hint: "Mountain that erupts with lava and ash" },
+    { word: "moonlight", hint: "Light from the moon" },
+    { word: "chocolate", hint: "Sweet brown treat made from cacao" },
+    { word: "butterfly", hint: "Insect with colorful wings" },
+    { word: "telephone", hint: "Device used for communication" },
+    { word: "umbrella", hint: "Protects from rain or sun" },
+    { word: "camera", hint: "Device used to capture images" },
+    { word: "piano", hint: "Musical instrument with black and white keys" },
+    { word: "cupcake", hint: "Small cake often topped with icing" },
+    { word: "tiger", hint: "Striped feline predator" },
+    { word: "ocean", hint: "Vast body of saltwater" },
+    { word: "bicycle", hint: "Two-wheeled vehicle" },
+    { word: "fireworks", hint: "Colorful explosions in the sky" },
+    { word: "pizza", hint: "Italian dish with cheese and toppings" },
+    { word: "ballet", hint: "Form of dance characterized by grace and precision" },
+    { word: "volcano", hint: "Mountain that erupts with lava and ash" },
+    { word: "moonlight", hint: "Light from the moon" },
+    { word: "chocolate", hint: "Sweet brown treat made from cacao" },
+    { word: "butterfly", hint: "Insect with colorful wings" },
+    { word: "telephone", hint: "Device used for communication" },
+    { word: "umbrella", hint: "Protects from rain or sun" },
+    { word: "camera", hint: "Device used to capture images" },
+    { word: "piano", hint: "Musical instrument with black and white keys" },
+    { word: "cupcake", hint: "Small cake often topped with icing" },
+    { word: "tiger", hint: "Striped feline predator" },
+    { word: "ocean", hint: "Vast body of saltwater" },
+    { word: "bicycle", hint: "Two-wheeled vehicle" },
+    { word: "fireworks", hint: "Colorful explosions in the sky" },
+    { word: "pizza", hint: "Italian dish with cheese and toppings" },
+    { word: "ballet", hint: "Form of dance characterized by grace and precision" },
+    { word: "volcano", hint: "Mountain that erupts with lava and ash" },
+    { word: "moonlight", hint: "Light from the moon" },
+    { word: "chocolate", hint: "Sweet brown treat made from cacao" },
+    { word: "butterfly", hint: "Insect with colorful wings" },
+    { word: "telephone", hint: "Device used for communication" },
+    { word: "umbrella", hint: "Protects from rain or sun" },
+    { word: "camera", hint: "Device used to capture images" },
+    { word: "piano", hint: "Musical instrument with black and white keys" },
+    { word: "cupcake", hint: "Small cake often topped with icing" },
+    { word: "tiger", hint: "Striped feline predator" },
+    { word: "ocean", hint: "Vast body of saltwater" },
+    { word: "bicycle", hint: "Two-wheeled vehicle" },
+    { word: "fireworks", hint: "Colorful explosions in the sky" },
+    { word: "pizza", hint: "Italian dish with cheese and toppings" },
+    { word: "ballet", hint: "Form of dance characterized by grace and precision" },
+    { word: "volcano", hint: "Mountain that erupts with lava and ash" },
+    { word: "moonlight", hint: "Light from the moon" },
+    { word: "chocolate", hint: "Sweet brown treat made from cacao" },
+    { word: "giraffe", hint: "Tall African mammal with a long neck" },
+    { word: "rainbow", hint: "Colorful arc in the sky after rain" },
+    { word: "butter", hint: "Yellow dairy product made from cream" },
+    { word: "diamond", hint: "Hard, precious stone often used in jewelry" },
+    { word: "zeppelin", hint: "Large airship used for transport" },
+    { word: "dragon", hint: "Mythical creature with wings and fire breath" },
+    { word: "beach", hint: "Sandy shore by the sea" },
+    { word: "sunrise", hint: "Dawn; the time when the sun appears above the horizon" },
+    { word: "waterfall", hint: "Flowing cascade of water" },
+    { word: "octopus", hint: "Sea creature with eight tentacles" },
+    { word: "candle", hint: "Wax stick with a wick that is lit for illumination" },
+    { word: "basketball", hint: "Sport played with a round ball and hoop" },
+    { word: "jungle", hint: "Thick, tropical forest" },
+    { word: "rocket", hint: "Vehicle used for space travel" },
+    { word: "treasure", hint: "Valuable items hidden or buried" },
+    { word: "moonshine", hint: "Illegally distilled alcohol" },
+    { word: "castle", hint: "Fortified medieval building" },
+    { word: "blossom", hint: "Flower in bloom" },
+    { word: "planet", hint: "Large celestial body that orbits a star" },
+    { word: "garden", hint: "Area of land planted with flowers or vegetables" },
+    { word: "paradise", hint: "Perfect place of happiness and bliss" },
+    { word: "robot", hint: "Mechanical device capable of performing tasks automatically" },
+    { word: "shark", hint: "Predatory fish with sharp teeth" },
+    { word: "raindrop", hint: "Single drop of rain" },
+    { word: "carousel", hint: "Merry-go-round amusement ride" },
+    { word: "unicorn", hint: "Mythical horse-like creature with a horn" },
+    { word: "harmony", hint: "Agreement in feeling or opinion" },
+    { word: "cactus", hint: "Spiny desert plant" },
+    { word: "penguin", hint: "Flightless bird found in the Southern Hemisphere" },
+    { word: "breeze", hint: "Gentle wind" },
+    { word: "echo", hint: "Repetition of sound caused by reflection" },
+    { word: "glacier", hint: "Large mass of ice moving slowly down a slope" },
+    { word: "comet", hint: "Celestial object with a tail, often seen in the night sky" },
+    { word: "sunset", hint: "The time when the sun disappears below the horizon" },
+    { word: "dragonfly", hint: "Insect with long body and transparent wings" },
+    { word: "volleyball", hint: "Sport played with a ball over a net" },
+    { word: "campfire", hint: "Outdoor fire used for warmth or cooking" },
+    { word: "sunshine", hint: "Light and warmth from the sun" },
+    { word: "butterfly", hint: "Insect with colorful wings" },
+    { word: "telephone", hint: "Device used for communication" },
+    { word: "umbrella", hint: "Protects from rain or sun" },
+    { word: "camera", hint: "Device used to capture images" },
+    { word: "piano", hint: "Musical instrument with black and white keys" },
+    { word: "cupcake", hint: "Small cake often topped with icing" },
+    { word: "tiger", hint: "Striped feline predator" },
+    { word: "ocean", hint: "Vast body of saltwater" },
+    { word: "bicycle", hint: "Two-wheeled vehicle" },
+    { word: "fireworks", hint: "Colorful explosions in the sky" }
+  ];
+  
 
 
 

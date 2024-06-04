@@ -2,15 +2,6 @@
 Word Scramble Game
 Welcome to the Word Scramble Game repository! This is a simple and fun word game built using HTML, CSS, and JavaScript. Test your vocabulary and word unscrambling skills while enjoying different themes.
 
-Table of Contents
-Demo
-Features
-Getting Started
-How to Play
-Themes
-License
-Demo
-Check out the live demo here (Add the link to your deployed game once it's live).
 
 Features
 Word scrambling and unscrambling.
